@@ -1,4 +1,9 @@
 # Baro Browser
+
+<p align="center">
+    <img width="180" src="https://cdn.discordapp.com/attachments/730722064402481252/789224935003521044/pluginIcon.png" alt="logo">
+</p>
+
 BaroBrowser is a IntelliJ IDEA plugin written in Kotlin
 This plugin adds a tool window to IntelliJ plugins that opens the following apps inside JCEF
 
