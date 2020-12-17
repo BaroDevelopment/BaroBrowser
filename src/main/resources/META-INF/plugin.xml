@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.baro.browser</id>
+    <name>BaroBrowser</name>
+    <version>0.0.1-SNAPSHOT</version>
+    <vendor email="" url="">Baro Development</vendor>
+
+    <description><![CDATA[
+        Note that this plugin uses JCEF; you should have it in the runtime you're using
+        (for 2020.2+ it's already bundled, for 2020.1 and before you should use this with a jcef runtime and the
+        Choose Runtime plugin).
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="BaroBrowser" anchor="bottom" factoryClass="panel.PanelFactory"/>
+        <applicationService serviceImplementation="panel.PanelSettingsState"/>
+        <applicationConfigurable parentId="other" displayName="BaroBrowser" id="panel.PanelConfigurable"
+                                 instance="panel.PanelConfigurable"/>
+    </extensions>
+</idea-plugin>
