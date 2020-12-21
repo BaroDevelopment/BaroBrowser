@@ -3,7 +3,7 @@
     <name>BaroBrowser</name>
     <version>0.0.1-SNAPSHOT</version>
     <vendor email="" url="">Baro Development</vendor>
-
+    <idea-version since-build="201.4515.24"/>
     <description><![CDATA[
         Note that this plugin uses JCEF; you should have it in the runtime you're using
         (for 2020.2+ it's already bundled, for 2020.1 and before you should use this with a jcef runtime and the

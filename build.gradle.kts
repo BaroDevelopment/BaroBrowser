@@ -18,7 +18,7 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "2020.2"
+    version = "2020.3"
 }
 
 tasks {
@@ -27,8 +27,9 @@ tasks {
     }
     patchPluginXml {
         changeNotes(
-                """
+            """
         Add Github, Gitlab, Youtube and Discord
-        """.trimMargin())
+        """.trimMargin()
+        )
     }
 }
