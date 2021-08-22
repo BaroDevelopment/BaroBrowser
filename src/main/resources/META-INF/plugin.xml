@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.baro.browser</id>
     <name>BaroBrowser</name>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3</version>
     <vendor email="" url="">Baro Development</vendor>
     <idea-version since-build="201.4515.24"/>
     <description><![CDATA[

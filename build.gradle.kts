@@ -5,7 +5,7 @@ plugins {
 
 
 group = "com.baro.browser"
-version = "0.0.2-SNAPSHOT"
+version = "0.0.3"
 
 repositories {
     mavenCentral()
