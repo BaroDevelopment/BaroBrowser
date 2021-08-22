@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.3.72"
-    id("org.jetbrains.intellij") version "0.4.21"
+    kotlin("jvm") version "1.4.32"
+    id("org.jetbrains.intellij") version "0.7.2"
 }
 
 
@@ -18,18 +18,26 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = "2020.3"
+    version = "2021.2"
 }
 
 tasks {
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions.jvmTarget = "11"
+        kotlinOptions {
+            jvmTarget = "11"
+            languageVersion = "1.3"
+            apiVersion = "1.3"
+        }
     }
     patchPluginXml {
-        changeNotes(
-            """
+        sinceBuild("202.6397.94")
+        changeNotes("""
         Add Github, Gitlab, Youtube and Discord
         """.trimMargin()
         )
+    }
+
+    runPluginVerifier {
+        setIdeVersions(listOf("IIC-2020.3.1", "IIC-2021.2"))
     }
 }
